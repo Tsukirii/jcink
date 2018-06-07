@@ -1,0 +1,1060 @@
+/*=============================================== *
+ * Jcink.com Forum Hosting Stylesheet
+ * ==============================================
+ * #Version:	1.0.2
+ *=============================================== */
+
+html { overflow-x: auto; } 
+form { display:inline; }
+
+/****************************************
+ Body Background & Text Style
+*****************************************/
+
+body { 
+	font-family: Verdana; 
+	font-size: 11px; 
+	color: #ddd; 
+        margin:0px;
+	padding:0px; 
+        background-color:#111; 
+	text-align:center;
+	background-image: url(https://image.ibb.co/k8ocFx/blackorchid.png);
+	background-attachment: fixed;
+}
+
+@media screen and (max-device-width: 480px){
+  body{
+    -webkit-text-size-adjust: none;
+  }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+  body{
+    -webkit-text-size-adjust: none;
+  }
+
+}
+
+/****************************************
+   Table Styles
+*****************************************/
+
+table, tr, td {
+	font-family: Verdana; 
+	font-size: 12px; 
+	color: #ddd; 
+}
+
+/****************************************
+   Board Width
+*****************************************/
+
+#wrapper { 
+    text-align: left;
+    width: 980px;
+    padding-bottom: 5px;
+    background: #222;
+    margin: 57px auto 0;
+}
+
+/****************************************
+   Link colors
+*****************************************/
+
+a:link, a:visited, a:active { 
+	text-decoration: none;
+	color: #800000; 
+}
+a:hover { 
+	color: gray; 
+	text-decoration: none; 
+}
+
+
+/****************************************
+   Profile styles 
+*****************************************/
+
+#profilename { 
+	font-size:28px;
+	font-weight:bold; 
+}
+
+#photowrap { 
+	padding:6px; 
+}
+
+#phototitle { 
+	font-size:24px; 
+	border-bottom:1px solid black;
+}
+
+#photoimg   { 
+	text-align:center; margin-top:15px; 
+} 
+
+/****************************************
+   UserCP/My Controls styles
+*****************************************/
+
+#ucpmenu { 
+	line-height:150%;
+	width:22%; 
+	border:1px solid #555;
+	background-color: #111;
+}
+
+#ucpmenu p  { 
+	padding:2px 5px 6px 9px; 
+	margin:0px;  
+}
+
+#ucpcontent { 
+	background-color: #111; 
+	border:1px solid #545454;
+	line-height:150%; width:auto; 
+}
+
+#ucpcontent p  { 
+	padding:10px;
+	margin:0px; 
+}
+
+/****************************************
+  Logo Strip
+*****************************************/
+
+#logostrip { 
+	display: none;
+}
+
+#logo { 
+	min-height: 60px; 
+	text-align: left; 
+	margin-top: 5px; 
+	padding: 20px 20px 5px; 
+}
+
+
+#logo a, #logo a:hover { 
+	font-size: 36px; 
+	text-decoration: none;
+	font-weight: bold; 
+	color: #800000; 
+}
+
+/****************************************
+  Search Bar 
+*****************************************/
+
+#searchbar {
+    position: fixed;
+    float: right;
+    right: 10px;
+    top: 12px;
+}
+
+#searchbar .search-container {
+    background-color: transparent;
+    border-bottom: 1px solid #808080;
+    display: block;
+    height: 26px;
+    position: relative;
+    width: 200px;
+}
+
+#searchbar .search-input {
+    background: none repeat scroll 0 0 transparent;
+    border: 0;
+    color: #eee;
+    font-size: 10px;
+    width: 192px;
+    height: 26px;
+    font-family: Verdana;
+    padding: 1px 0 0 8px;
+}
+
+#searchbar .search-input:focus {
+    color: #ddd;
+    outline: 0;
+}
+
+#searchbar .search-button {
+	background: transparent url(//files.jcink.net/themes/default/magnifying-glass.png) no-repeat 50% 50%;
+	border: 0;
+	bottom: 0;
+	margin: 0;
+	border-radius: 0;
+	display: block;
+	height: 26px;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	text-indent: -3000em;
+	top: 0;
+	width: 26px;
+	cursor: pointer;
+	box-shadow: none;
+}
+
+/****************************************
+  Navigation Bar / Submenu
+*****************************************/
+
+#submenu  {
+	display: none;
+	font-size: 13px;
+	border: solid #555;
+        border-width: 1px 0;
+	background-color: #800000;
+        background-image: url(//files.jcink.net/themes/default/red-gradient-glass.png);
+        background-position: center center;
+        margin-bottom: 3px;
+}
+
+#submenu img { 
+	display: none; 
+}
+
+#submenu a:link, #submenu a:visited, #submenu a:active { 
+	text-decoration: none;
+	color: #fff !important; 
+        padding: 7px 7px;
+        font-weight: bold;
+}
+
+#submenu a:hover { 
+	color: #fff !important; 
+	text-decoration: underline; 
+}
+
+#navi br { 
+	display: none; 
+}
+
+#navstrip a:link, #navstrip a:visited, #navstrip a:active {
+    color: #f2f2f2;
+}
+
+#navstrip {
+    padding: 5px 20px;
+    position: fixed;
+    top: 40px;
+    right: 0;
+    width: 65%;
+    box-sizing: border-box;
+    background: #111;
+    font-size: 6.5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    height: 19px;
+}
+
+/****************************************
+   Calendar styling
+*****************************************/
+
+.caldate   { 
+	text-align:right;
+	font-weight:bold;
+	font-size:11px;
+	color:#555;
+	background-color:#F2F2F2;
+	padding:4px; margin:0px; 
+}
+
+#calendarname { 
+	font-size:22px;
+	font-weight:bold; 
+}
+
+#padandcenter { 
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	padding:14px 0px 14px 0px; 
+}
+
+
+/**************************************************
+ User Links Menu (Messages / View new posts / etc )
+***************************************************/
+
+#userlinks {
+    list-style: none;
+    margin: 0 auto;
+    display:none;
+}
+
+#userlinks td { 
+	color: #f2f2f2; 
+}
+
+#userlinks a { 
+	text-decoration: none; padding: 1px;
+	color: #f2f2f2;
+}
+
+#userlinks a:hover { 
+	text-decoration: none; 
+}
+
+
+/****************************************
+   Topic View styles
+*****************************************/
+
+.activeuserstrip { 
+	background-color: #D6D6D6;padding:6px 
+}
+
+.normalname { 
+	font-size: 12px; 
+	font-weight: bold; 
+	color: #003; 
+}
+
+.normalname a { 
+	font-size: 12px;
+}
+
+.unreg { 
+	font-size: 11px; 
+	font-weight: bold; 
+	color: #900; 
+}
+
+.post1 { 
+	background-color: #F2F2F2; 
+}
+
+.post2 { 
+	background-color: #F2F2F2; 
+}
+
+.postdetails { 
+	font-size: 10px; 
+}
+
+.postcolor   { 
+	font-size: 12px; line-height: 160%; 
+}
+
+.postlinksbar {
+        padding: 1px 5px; 
+	background-color:#CCCCCC;
+	padding:1px;
+	margin-top:1px;
+	font-size:10px;
+	background-image:url(//files.jcink.net/themes/default/thin-gray-gradient.png);
+}
+
+.signature   { 
+	font-size: 10px; 
+	color: #339; 
+	line-height:150%;  
+}
+
+
+/*******************************
+ Pagination e.g. [1],2,3 ...
+*******************************/
+
+.pagination .pagination_current, .pagination a {
+     padding: 2px 5px;
+}
+
+.pagination a:link, .pagination a:visited, .pagination a:active {
+     border: 1px solid #800000;
+     border-radius:3px;
+     background-color:#740300;
+     padding-left:6px;
+     padding-right:6px;
+     color:#ffffff;
+     text-decoration:none;
+     box-shadow: 0pt 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.pagination a:hover {
+	background: #EFEEEE;
+	text-decoration: none;
+	color:#000000;
+	box-shadow: 0pt 2px 3px rgba(0, 0, 0, 0.4);
+	background-image:url(//files.jcink.net/themes/default/gray-gradient.png); 
+}
+
+.pagination .pagination_current {
+     background: none repeat scroll 0% 0% #FFFFFF;
+     border: 1px solid #545454;
+     border-radius:3px;
+     padding-left:6px;
+     padding-right:6px;
+     background-image:url(//files.jcink.net/themes/default/gray-gradient.png); 
+}
+
+.pagination_first, .pagination_last, .pagination_page {
+     background: none repeat scroll 0% 0% #740300;
+     border: 1px solid #800000;
+}
+
+.pagination_pagetxt {
+    display:none;
+}
+
+/****************************************
+   Global general table/div row styles
+*****************************************/
+
+.row1,.row3,.row4,.row2 { 
+	background-color: #111;
+	padding: 5px;
+}
+
+td.row4:first-child {
+    background: #111;
+}
+
+#boardstats .row2 { 
+	text-align: center; 
+}
+
+.darkrow1 { 
+	background-color: #D6D6D6; color:black; 
+}
+
+.darkrow2 { 
+	background-color: #D6D6D6; color:black; 
+}
+
+td.darkrow2 { 
+	display: none; 
+}
+
+.darkrow3 { 
+	background-color: #D6D6D6; 
+	color: #000; 
+	padding: 3px; 
+}
+
+.hlight { background-color: #EFEFEF; }
+.dlight { background-color: #EFEFEF; }
+
+/****************************************
+   Top table bars / gradient holders 
+*****************************************/
+
+.maintitle { 
+	background-color: #fea898;
+	font-weight: bold; 
+	padding: 8px; 
+	color: #FFF;
+}
+
+.maintitle a:link, .maintitle  a:visited, .maintitle  a:active { 
+	text-decoration: none; color: #FFF !important; 
+}
+
+.maintitle a:hover { 
+	text-decoration: underline;  
+}
+
+/****************************************
+  Bar directly below the maintitles 
+*****************************************/
+
+.titlemedium { 
+	font-weight:bold; color:#222; 
+	padding: 2px 6px; margin:0px;
+	background-color:#D8D8D8;
+        background-image: url(//files.jcink.net/themes/default/gray-gradient.png);
+ }
+
+.titlemedium  a:link, .titlemedium  a:visited, .titlemedium  a:active  { 
+	text-decoration: none; 
+	color: #222; 
+}
+
+/****************************************
+  Table & Div Borders 
+*****************************************/
+
+.tableborder { 
+	background-color: #C0C0C0; 
+	border:1px solid #555; padding:0px; margin:0; 
+}
+
+.tablefill { 
+	background-color: #111;
+	border:1px solid #555; 
+	padding:6px; 
+}
+
+.tablepad {
+	background-color: #EFEFEF; 
+	padding:6px;
+}
+
+.tablebasic {
+	width:100%; padding:0; margin:0px; border:0px; 
+}
+
+.plainborder { 
+	border:1px solid #555; 
+	background-color: #EFEFEF; 
+}
+
+/****************************************
+  QUOTE and CODE BBCode boxes
+*****************************************/
+
+#QUOTE { 
+	white-space:normal; 
+	font-family: Arial, sans-serif; 
+	font-size: 11px; 
+	color: #333; 
+	background-color: #EFEFEF; 
+	border: 0px; 
+	padding:2px;
+	border:1px solid #555; 
+	margin-top:2px; 
+}
+
+#CODE  { 
+	white-space:normal; 
+	font-family: Courier, Courier New, Verdana, Arial;  
+	font-size: 11px; 
+	color: #333; 
+	background-color: #EFEFEF; 
+	border: 0px; 
+	padding:2px;
+	border:1px solid #555; 
+	margin-top:2px; 
+}
+
+
+/**********************************************
+  Input buttons, e.g. submit, text input, etc
+***********************************************/
+
+.button-large {
+	background: #800000 url(//files.jcink.net/themes/default/red-gradient.png);  
+	border-radius: 3px;
+        padding: 5px 12px;
+	text-align:center;
+	margin:0px 5px 0px 5px;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+        color: #FFFFFF;
+	font-weight: bold;
+        min-width: 75px;
+        display: inline-block;
+}
+
+
+.button-small {
+	background: #800000 url(//files.jcink.net/themes/default/red-gradient.png);
+	border-radius:3px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 11px;
+	margin: 3px;
+	padding: 4px 7px;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+	text-decoration: none;
+        min-width: 50px;
+        max-width: 80px;
+}
+
+.post-buttons-top { margin-top: 3px; }
+
+.button-large.closed {
+	background: url(//files.jcink.net/themes/default/white-gradient.png);
+        padding: 7px 12px;
+	text-align:center;
+	margin:0px 5px 0px 5px;
+        border: 1px solid #d8d8d8;
+        color: #660000; 
+	font-weight: bold;
+}
+
+.forminput, .codebuttons, .textinput, .radiobutton, .checkbox {
+	border-radius: 2px;
+	background: #FFF; border: 1px solid #545454;
+	color: #000;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	padding: 2px;
+	vertical-align: middle;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.4) inset;
+}
+
+
+input[type=submit], input[type=button], input[type=reset] {
+	background: #800000 url(//files.jcink.net/themes/default/red-gradient.png);
+	border-radius:3px;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+	color: #FFFFFF;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 3px;
+	padding: 2px 6px;
+	text-decoration: none;
+	border: none; 
+}
+
+.codebuttons  { 
+	font-size: 10px; 
+}
+
+
+/****************************************
+  Form table cell styles, left/right/top
+*****************************************/
+
+.pformstrip {
+	background-image:url(//files.jcink.net/themes/default/gray-gradient.png); 
+	background-color: #D6D6D6; 
+	color:black; font-weight:bold;
+	padding: 2px 5px;
+	margin-top:1px 
+}
+
+.pformleft  { 
+	background-color: #EFEFEF; 
+	padding:6px; 
+	margin-top:1px;width:25%; 
+	border-top:1px solid #545454; 
+	border-right:1px solid #545454; 
+}
+
+.pformleftw { 
+	background-color: #EFEFEF; padding:6px; 
+	margin-top:1px;width:40%; 
+	border-top:1px solid #232323; 
+	border-right:1px solid #232323; 
+}
+
+.pformright { 
+	background-color: #EFEFEF; 
+	padding:6px; margin-top:1px;
+	border-top:1px solid #232323; 
+}
+
+
+/****************************************
+ Tabs on the portal profiles + sections
+*****************************************/
+
+.opentab {
+	color: #FFF;
+	padding:8px;float: left; width: auto;
+	background-color: #800000;
+        background-image: url(//files.jcink.net/themes/default/red-gradient.png);
+	margin-top:3px;
+	margin-right:2px;
+	font-size:11px;
+	border: #545454 1px solid;	
+}
+
+.closedtab {
+	color: #FFF;
+	padding:7px;float: left;width: auto;
+	background-color: #800000;
+        background-image: url(//files.jcink.net/themes/default/red-gradient.png);
+	margin-top:6px;
+	margin-right:2px;
+	font-size:11px;
+	border-top:   #545454 1px solid;
+	border-right: #545454 1px solid;
+	border-left:  #545454 1px solid;
+}
+
+.positiontab { 
+	height: 34px; margin-left: 2px;
+}
+
+/****************************************
+   Delete all cookies / mark read
+*****************************************/
+
+#delcookiesrow, #mark-as-read-subto {
+	background-color: #EFEFEF;
+	border: 1px solid #545454;
+	font-size: 10px;
+	padding: 5px;
+        width: 260px;
+        float: right;
+        margin-top:-3px;
+        padding-left:1px;
+}
+
+#mark-as-read-subto {
+	float: none;
+	padding-top: 3px;
+}
+
+
+/*******************************
+     Board Statistics Links
+*******************************/
+
+.toplinks a {
+	color: #ffffff;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.toplinks {
+	margin: 0 11px -37px 0;
+	text-align: right;
+	color: transparent;
+}
+
+/*******************************
+ Mini Profile Seperators
+*******************************/
+
+.postbit { 
+	border-bottom: solid 1px #C0C0C0; 
+	color: black;
+	background: #EFEFEF;
+	font-size: 11px;
+        padding: 6px 7px;
+}
+
+/********************************
+	Miscellaneous
+********************************/
+
+/* image tag styles */
+img        { vertical-align:middle; border:0px }
+img.attach { border:2px outset #555;padding:2px }
+
+/* Forum Descriptions */
+.desc { font-size:11px; color: #000; }
+
+/* Edited by text */
+.edit { font-size: 9px }
+
+/* Topic Macros */
+
+.wrapmini { float: left; }
+
+/* Warning CSS */
+.warngood { color:green }
+.warnbad  { color:red }
+
+/* Skin selector dropdown */
+#skin_selector { 
+	margin: 10px 0; 
+}
+
+
+/* Online users list row */
+.thin { 
+	padding:6px 0px 6px 0px;
+	line-height:140%;
+	margin:2px 0px 2px 0px;
+	border-top:1px solid #545454;
+	border-bottom:1px solid #545454;
+}
+
+/* Latest news area */
+.newstext { 
+	background-color: #EFEFEF; 
+	border: 1px solid #555; 
+	padding: 6px 6px 2px 6px; 
+	margin-bottom: 10px; 
+}
+
+/* Highlighted text in search */
+.searchlite { 
+	color:#F00;
+	font-weight:bold;  
+	background-color:#FF0; 
+}
+
+/****************************************
+ Mobile-specific Styles
+*****************************************/
+
+#mobile { 
+	background-color: #FBFBFB;
+}
+
+/***********************************
+ Copyright: Removal is against Terms
+************************************/
+
+.copyright { 
+	font-size: 10px; line-height: 12px; 
+}
+
+/***********************************
+ Sidebar
+************************************/
+
+#sidebar {
+    position: fixed;
+    top: 150px;
+    z-index: 20;
+    width: 225px;
+    max-height: 439px;
+    height: calc(100% - 150px);
+    box-sizing: border-box;
+    background: #222;
+    transition: left 0.5s;
+    -webkit-transition: left 0.5s;
+    color: #ddd;
+}
+
+#wrapper2
+{
+  padding-right: 15px;
+  transition: margin 0.5s;
+  -webkit-transition: margin 0.5s;
+}
+
+.cnvavatar img {
+    width: 75px;
+    height: 75px;
+    margin: 25px;
+}
+
+.cnvavatar {
+    background: #111;
+    width: 125px;
+    height: 125px;
+}
+
+.cnvavatar, .cnvavatarright {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.cnvavatarright {
+    background-color: #555;
+    width: 99px;
+    height: 125px;
+    box-sizing: border-box;
+    margin-left: -3px;
+    font-family: Roboto;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 8.5px;
+    letter-spacing: 1px;
+    padding: 50px 10px;
+    text-align: left;
+}
+
+#cninfo {
+    background: #1b1b1b;
+    padding: 8px;
+    font-size: 7px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#cninfo a {
+    color: #a9a9a9;
+    margin: 0 4px;
+}
+
+#cninfo i {
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.guestmsg {
+    text-align: justify;
+    padding: 10px 30px;
+}
+
+.cnvavatarright a { color: #fbfbfb; }
+.gp-2 { display: inline-block !important; }
+
+.cninlink i {
+    font-size: 11px;
+    float: left;
+    margin: 0 10px;
+    color: #94aeb9;
+}
+
+.cninlink a {
+    display: block;
+    font-size: 8px;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: left;
+    background: #111;
+    border-bottom: 1px solid #222;
+    padding: 10px;
+    color: #808080;
+}
+
+.cnindisc {
+    background: #998aa0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Roboto;
+    padding: 20px;
+    letter-spacing: 1px;
+    font-size: 8px;
+}
+
+/***********************************
+ Navbar
+************************************/
+
+#cnv-navbar {
+    position: fixed;
+    text-align: left;
+    background: #222;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 40px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+a#sidebarHandle, a#sidebarHandle-wrapper 
+{
+    color: #fbfbfb;
+    font-weight: 700;
+}
+
+#sidebarHandle i { font-size: 12px; }
+
+#sidebarHandle-wrapper {
+    padding: 5px 6px;
+    background: #333;
+    width: 24px;
+    box-sizing: border-box;
+    font-size: 9px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#sitename-cnvs {
+    display: inline-block;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px 10px;
+    line-height: 100%;
+    color: #f2f2f2;
+}
+
+/***********************************
+ Second Navbar - Userlinks
+************************************/
+
+#cnvslinks {
+    position: fixed;
+    top: 40px;
+    width: 35%;
+    background: #111;
+    border-right: 1px solid #333;
+    box-sizing: border-box;
+    text-align: right;
+    padding: 5px 20px;
+    font-size: 7px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-style: italic;
+    z-index: 999;
+}
+
+#cnvslinks table, #cnvslinks tr, #cnvslinks td {
+    font-size: 8px;
+    text-transform: uppercase;
+}
+
+table#userlinks td:first-child {
+    text-align: left;
+}
+
+.mcp-0, .acp-0, .m-2 { display: none; } 
+.g-2 { display: block !important; }
+.mg-4, .mg-6 { display: inline-block !important }
+.msg0 {display: none}
+
+.user.links-container {
+    float: right;
+    margin: 3px;
+}
+
+.user.links-container a {
+    color: #efefef;
+    background: rgba(17, 17, 17, 0.5);
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 7px;
+    font-family: Roboto;
+    font-weight: 700;
+    padding: 5px;
+}
+
+/***********************************
+ Header
+************************************/
+
+#cnvs-header {
+    position: relative;
+    top: 59px;
+    height: 400px;
+    background-image: url(https://image.ibb.co/kunYc7/header2.png);
+    background-size: cover;
+    border-bottom: 10px solid #222;
+    width: 100%;
+    background-position: 100%;}
+
+#cnvs-name {
+    font-size: 90px;
+    font-weight: 900;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 15px;
+    position: relative;
+    top: 180px;
+    color: #f2f2f2;
+    text-shadow: 1px 0px #577eb0, 0px 1px #577eb0, -1px 0px #577eb0, 0px -1px #577eb0;
+}
+
+span.cnvs-name-sub {
+    font-size: 9px;
+    font-weight: normal !important;
+    font-family: Verdana;
+    letter-spacing: 10px;
+}
+
+
+/***********************************
+ Tooltip
+************************************/
+
+#s-m-t-tooltip{
+    background: #232323;
+    box-shadow: 1px 1px 1px #545454;
+    z-index: 999;
+    border-radius: 2px;
+    padding: 3px 10px;
+    margin: 5px 0 0 10px;
+    max-width: 250px;
+    color: #eee;
+    font-family: Montserrat;
+    font-size: 7px;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
