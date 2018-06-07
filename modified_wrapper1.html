@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+	<title><% TITLE %></title> 
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<% CSS %> 
+	<% JAVASCRIPT %> 
+	<script type="text/javascript">
+	// Sidebar Toggle (as written by clock)
+	
+	function sideToggle() {
+	
+	var eleSidebar = document.getElementById("sidebar");
+	var eleSidebarHandle = document.getElementById("sidebarHandle");
+	var eleWrapper = document.getElementById("wrapper2");
+	
+	if(eleSidebar.style.left == "20px") {
+	  eleSidebar.style.left = "-275px";
+	  eleSidebarHandle.style.left = "20px";
+	  eleWrapper.style.margin = "0 15px 0 25px";
+	  localStorage.setItem('sidebarState', 'false');
+	  }
+	  else {
+	    eleSidebar.style.left = "20px";
+	    eleSidebarHandle.style.left = "20px";
+	    eleWrapper.style.margin = "0 15px 0 300px";
+	    localStorage.setItem('sidebarState', 'true');
+	  }
+	}
+	</script>
+  	<script defer="defer" src="https://cdn.rawgit.com/Tsukirii/Creative-Kingdom/46a3d198/tooltip.js"></script>  
+  	<script>
+		(function($){
+			$(document).ready(function(){
+				$("[title]").style_my_tooltips();
+			});
+		})(jQuery);
+	</script>
+	<script>
+	$(window).on('scroll', function() {
+	    var y_scroll_pos = window.pageYOffset;
+	    var scroll_pos_test = 93;
+	
+	    if(y_scroll_pos < scroll_pos_test) {
+	        $('#sidebar').css('position','absolute');
+			$('#sidebar').css('top','150px');
+	    }
+	    else {
+	        $('#sidebar').css('position','fixed');
+			$('#sidebar').css('top','57px');
+	    }
+	    
+	});
+	</script>
+    </head> 
+    <body>
+
+	<div id="cnv-navbar">
+		<div id="sidebarHandle-wrapper">
+			<a id="sidebarHandle" href="javascript:sideToggle();"><i class="material-icons">apps</i></a>
+		</div>
+		<div id="sitename-cnvs">
+			canvas
+		</div>
+		<div class="user links-container">
+			<div class="m-<!-- |g_id| -->">
+			   <!-- Markup for Admins and Members goes here -->
+				<a href='index.php' title="Ir al inicio">Home</a>
+				<a href='index.php?act=UserCP' title="Herramientas: edición de perfil, avatar, etc.">Tools</a>
+				<a href='index.php?act=Msg&CODE=01' title="Inbox">Inbox <span class="msginbox msg<!-- |new_msg| -->"> (<!-- |new_msg| -->)</span></a>
+				<a href="index.php?act=Login&CODE=03&key=<!-- |auth_key| -->" title="log out">Logout</a>
+
+				<div class="mg-<!-- |g_id| -->" style="display: none;">
+					<a href="index.php?act=modcp" class="mcp-<!-- |g_is_supmod| -->" style="background: #545454;">Mod CP</a>
+					<a href="admin.php" target="_blank" class="acp-<!-- |g_access_cp| -->" style="background: #808080;">Admin CP</a>
+				</div>
+			</div>
+			<div class="g-<!-- |g_id| -->" style="display: none;">
+			   <!-- Markup for Guests goes here -->
+				<a href='index.php'>Home</a>
+				<a href='/index.php?act=Login&CODE=00' title="login">Login</a>
+				<a href='/index.php?act=Reg&CODE=00' title="register">Registro</a>
+			</div>
+		</div>
+	</div>
+	<div id="cnvslinks">a new world to design</div>
+
+	<div id="cnvs-header">
+		<div id="cnvs-name">canvas <br> <span class="cnvs-name-sub">designs + codes + help</span></div>
+	</div>
+		
+		
+	<script type="text/javascript">
+	if (localStorage["sidebarState"] == "false")
+	  {document.writeln('<div id="sidebar" style="left: -275px;">');}
+	else
+	  {document.writeln('<div id="sidebar" style="left: 20px;">');}
+	</script>
+	<noscript><div id="sidebar" style="left: 0px;"></noscript>
+	
+		<div id="cnprofi">
+			<div class="cnvavatar"><!-- |avatar| --></div>
+			<div class="cnvavatarright"> welcome, <a href="index.php?showuser=<!-- |id| -->"><!-- |prefix| --><!-- |name| --><!-- |suffix| --></a></div>
+		</div>
+		
+		<div id="cninfo">
+			<a href="/" title="Reglas Generales"><i class="material-icons">loyalty</i></a>
+			<a href="/?act=store" title="Comprar items, recursos, etc."><i class="material-icons">shopping_cart</i></a>
+			<a href="/" title="Ayuda, soporte técnico, cambios de nick, etc."><i class="material-icons">widgets</i></a>
+			<div class="gp-<!-- |g_id| -->" style="display: none;">
+			   	<!-- Markup for Guests goes here -->
+				<a href="/?act=store" title="Registrate en el foro!"><i class="material-icons">add</i></a>
+			</div>
+			<div class="gp-<!-- |g_id| -->" style="display: none;">
+			   	<!-- Markup for Guests goes here -->
+				<div class="guestmsg">Todos los nuevos registros son aprobados por el staff, consulta esta guía para registrarte</div>	
+			</div>
+		</div>
+		
+		<div class="cninlink">
+			<div class="m-<!-- |g_id| -->">
+			<!-- Markup for Admins and Members goes here -->
+			<a href="index.php?act=Search&CODE=getnew"><i class="material-icons">chat_bubble</i> Ver nuevos mensajes</a>
+			<a href='index.php?act=UserCP&CODE=alerts'><i class="material-icons">new_releases</i> Alertas (<!-- |new_alerts| -->)</a>
+			</div>
+			<a href="/?act=store"><i class="material-icons">add_shopping_cart</i> Tienda</a>
+			<a href="/"><i class="material-icons">bookmark</i> link de prueba</a>
+			<a href="/"><i class="material-icons">brightness_2</i> link de prueba</a>
+			<a href="/"><i class="material-icons">bubble_chart</i> link de prueba</a>
+			<a href="/"><i class="material-icons">cached</i> link de prueba</a>
+			<a href="/"><i class="material-icons">call</i> link de prueba</a>
+		</div>
+		
+		<div class="cnindisc">
+			discord, unete
+		</div>
+	
+	</div>
+	<script type="text/javascript">
+	if (localStorage["sidebarState"] == "false")
+	  {document.writeln('<div id="wrapper2" style="margin: 0 15px 0 25px;">');}
+	else
+	  {document.writeln('<div id="wrapper2" style="margin: 0 15px 0 300px;">');}
+	</script>
+	<noscript>
+	<a id="sidebarHandle" href="javascript:sideToggle();"></a>
+	<div id="wrapper2" style="margin: 0 15px 0 300px;">
+	</noscript>
+		<div id="wrapper">
+			<div id="navi">
+			    <% NAVIGATION %>
+		    	</div>
+		    <% BOARD HEADER %>
+		    <div id="innerwrapper"> 
+		    	<% BOARD %> 
+		    	<% COPYRIGHT %>
+		    	<script>$('#logo a img[src="style_images/1/spacer.gif"]').replaceWith('<!-- |board_name| -->');</script>
+		    </div>
+		</div>
+	</div>
+    </body> 
+</html>
